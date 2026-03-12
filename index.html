@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>121212.culture — Black Creativity is the Standard</title>
+  <meta name="description" content="121212.culture — The home of Black creative genius. Art. Fashion. Film. Design. The culture belongs to us." />
+  <meta name="theme-color" content="#1a1a1a" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="121212.culture — Black Creativity is the Standard" />
+  <meta property="og:description" content="Art. Fashion. Film. Design. The culture belongs to us." />
+  <meta property="og:type" content="website" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div id="scroll-progress"></div>
+
+  <!-- ============================================
+       MAIN NAVIGATION
+       ============================================ -->
+  <nav id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+
+      <a href="#" class="nav-logo" aria-label="121212 Culture home">
+        <span class="logo-num">121212</span><span class="logo-ext">.culture</span>
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li><a href="#culture-grid-section">Art</a></li>
+        <li><a href="#fashion">Fashion</a></li>
+        <li><a href="#film">Film</a></li>
+        <li><a href="#culture-grid-section">Design</a></li>
+        <li><a href="#spotlight">Spotlight</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="#submit" class="btn btn-red">Submit Your Work</a>
+        <button class="hamburger" id="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobile menu">
+    <a href="#culture-grid-section">Art</a>
+    <a href="#fashion">Fashion</a>
+    <a href="#film">Film</a>
+    <a href="#culture-grid-section">Design</a>
+    <a href="#spotlight">Spotlight</a>
+    <a href="#submit" class="btn btn-red">Submit Your Work</a>
+  </div>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section id="hero" aria-label="Hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-content">
+
+        <p class="hero-eyebrow fade-up-delay-1">121212 Empire &mdash; Culture Division</p>
+
+        <h1 class="hero-headline fade-up-delay-2">
+          Black Creativity
+          <span class="accent-red">is the Standard.</span>
+        </h1>
+
+        <p class="hero-sub fade-up-delay-3">
+          Art. Fashion. Film. Design.<br />
+          The culture belongs to us.
+        </p>
+
+        <div class="hero-ctas fade-up-delay-4">
+          <a href="#culture-grid-section" class="btn btn-red">Explore the Culture</a>
+          <a href="#submit" class="btn btn-outline-white">Submit Your Work</a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+      Scroll
+    </div>
+  </section>
+
+  <!-- ============================================
+       CATEGORY FILTER BAR
+       ============================================ -->
+  <div id="category-bar" aria-label="Filter by category">
+    <div class="container">
+      <div class="pill-scroll" role="tablist">
+        <button class="pill active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="pill" data-filter="art" role="tab" aria-selected="false">Art</button>
+        <button class="pill" data-filter="fashion" role="tab" aria-selected="false">Fashion</button>
+        <button class="pill" data-filter="film" role="tab" aria-selected="false">Film</button>
+        <button class="pill" data-filter="design" role="tab" aria-selected="false">Design</button>
+        <button class="pill" data-filter="photography" role="tab" aria-selected="false">Photography</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================
+       FEATURED SPOTLIGHT
+       ============================================ -->
+  <section id="spotlight" class="section" aria-labelledby="spotlight-heading">
+    <div class="container">
+
+      <span class="section-label">Featured Creator</span>
+
+      <div class="spotlight-card reveal">
+
+        <div class="spotlight-image-wrap">
+          <span class="spotlight-badge">Creator of the Month</span>
+          <img
+            src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=900&fit=crop&q=80"
+            alt="Imani Rhodes — Visual Artist and Muralist"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="spotlight-content">
+          <p class="spotlight-discipline">Visual Art &bull; Muralism &bull; Mixed Media</p>
+
+          <h2 id="spotlight-heading">Imani Rhodes</h2>
+
+          <div class="spotlight-meta">
+            <div class="spotlight-avatar">
+              <img
+                src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=120&fit=crop&q=80"
+                alt="Imani Rhodes"
+              />
+            </div>
+            <div class="spotlight-meta-text">
+              <div class="name">Imani Rhodes</div>
+              <div class="title">Atlanta, Georgia — Visual Artist</div>
+            </div>
+          </div>
+
+          <p>
+            Imani Rhodes doesn't just paint walls — she rewrites them. Working across muralism, canvas, and
+            digital mixed media, her work centers the Black feminine divine with a color language entirely
+            her own. Her 10,000 sq ft mural on Auburn Avenue stopped traffic. Her gallery debut at MOCA
+            sold out in under four hours. This is what genius looks like.
+          </p>
+
+          <a href="#" class="btn btn-red">Read Full Story</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CULTURE GRID
+       ============================================ -->
+  <section id="culture-grid-section" class="section" aria-labelledby="grid-heading">
+    <div class="container">
+
+      <div class="section-header">
+        <div>
+          <span class="section-label">Latest &amp; Greatest</span>
+          <h2 id="grid-heading">The Culture, Right Now</h2>
+        </div>
+        <a href="#" class="view-all-link">View All Works &rarr;</a>
+      </div>
+
+      <div class="masonry-grid">
+
+        <!-- Card 1 — Art -->
+        <article class="culture-card reveal" data-cat="art">
+          <div class="culture-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?w=600&fit=crop&q=80"
+              alt="Abstract oil painting by Marcus Bell"
+              loading="lazy"
+            />
+            <span class="cat-badge cat-art">Art</span>
+          </div>
+          <div class="culture-card-body">
+            <div class="card-creator">Marcus Bell</div>
+            <h4>Frequencies of the Ancestral Self</h4>
+            <p class="card-excerpt">Oil and resin on canvas. Bell's latest series channels the vibrational language of the diaspora into form and color unlike anything the contemporary art world has seen.</p>
+          </div>
+        </article>
+
+        <!-- Card 2 — Fashion -->
+        <article class="culture-card reveal" data-cat="fashion">
+          <div class="culture-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=600&fit=crop&q=80"
+              alt="Fashion editorial by Zora Designs"
+              loading="lazy"
+            />
+            <span class="cat-badge cat-fashion">Fashion</span>
+          </div>
+          <div class="culture-card-body">
+            <div class="card-creator">Zora by Nia James</div>
+            <h4>Draping in Diasporic Gold</h4>
+            <p class="card-excerpt">Nia James's debut collection pulls from West African textile traditions and reframes them for the modern Black wardrobe. Every stitch is an act of reclamation.</p>
+          </div>
+        </article>
+
+        <!-- Card 3 — Film -->
+        <article class="culture-card reveal" data-cat="film">
+          <div class="culture-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=600&fit=crop&q=80"
+              alt="Film still from Meridian"
+              loading="lazy"
+            />
+            <span class="cat-badge cat-film">Film</span>
+          </div>
+          <div class="culture-card-body">
+            <div class="card-creator">Director: Kofi Asante</div>
+            <h4>Meridian — Behind the Lens</h4>
+            <p class="card-excerpt">Asante's sophomore feature follows four Black women crossing five countries in 24 hours. Shot on 35mm. Sundance. Standing ovation. History made quietly.</p>
+          </div>
+        </article>
+
+        <!-- Card 4 — Design -->
+        <article class="culture-card reveal" data-cat="design">
+          <div class="culture-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&fit=crop&q=80"
+              alt="Brand identity design by Studio Osei"
+              loading="lazy"
+            />
+            <span class="cat-badge cat-design">Design</span>
+          </div>
+          <div class="culture-card-body">
+            <div class="card-creator">Studio Osei</div>
+            <h4>Brand Identity for the Next Generation</h4>
+            <p class="card-excerpt">Studio Osei is redefining visual identity for Black-owned brands — building design systems that honor African aesthetics and speak fluent global.</p>
+          </div>
+        </article>
+
+        <!-- Card 5 — Photography -->
+        <article class="culture-card reveal" data-cat="photography">
+          <div class="culture-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&h=700&fit=crop&q=80"
+              alt="Portrait photography by Jade Mensah"
+              loading="lazy"
+            />
+            <span class="cat-badge cat-photography">Photography</span>
+          </div>
+          <div class="culture-card-body">
+            <div class="card-creator">Jade Mensah</div>
+            <h4>Soft Power: A Portrait Series</h4>
+            <p class="card-excerpt">100 Black women. 100 cities. Mensah's continent-spanning portrait series documents softness as radical act — vulnerability as a revolutionary stance.</p>
+          </div>
+        </article>
+
+        <!-- Card 6 — Art -->
+        <article class="culture-card reveal" data-cat="art">
+          <div class="culture-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=600&fit=crop&q=80"
+              alt="Sculpture installation by Adaeze Nwosu"
+              loading="lazy"
+            />
+            <span class="cat-badge cat-art">Art</span>
+          </div>
+          <div class="culture-card-body">
+            <div class="card-creator">Adaeze Nwosu</div>
+            <h4>Weight of Water, Weight of Memory</h4>
+            <p class="card-excerpt">Nwosu's suspended bronze sculpture installation at the Tate Modern interrogates colonial cartography and the bodies that never made it to the map.</p>
+          </div>
+        </article>
+
+        <!-- Card 7 — Fashion -->
+        <article class="culture-card reveal" data-cat="fashion">
+          <div class="culture-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=600&fit=crop&q=80"
+              alt="Streetwear editorial by Casa Noir"
+              loading="lazy"
+            />
+            <span class="cat-badge cat-fashion">Fashion</span>
+          </div>
+          <div class="culture-card-body">
+            <div class="card-creator">Casa Noir</div>
+            <h4>Street Luxury: The Fall Drop</h4>
+            <p class="card-excerpt">Casa Noir's fall capsule blurs the line between streetwear and couture. Hood meets haute. The result is a new language for Black luxury.</p>
+          </div>
+        </article>
+
+        <!-- Card 8 — Design -->
+        <article class="culture-card reveal" data-cat="design">
+          <div class="culture-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&fit=crop&q=80"
+              alt="UI/UX design by Kwame Asiedu"
+              loading="lazy"
+            />
+            <span class="cat-badge cat-design">Design</span>
+          </div>
+          <div class="culture-card-body">
+            <div class="card-creator">Kwame Asiedu</div>
+            <h4>Designing Technology That Sees Us</h4>
+            <p class="card-excerpt">Asiedu's design philosophy: if it wasn't built for Black users first, it's a prototype. His UX work is reshaping how apps feel when the default user is us.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FASHION EDITORIAL
+       ============================================ -->
+  <section id="fashion" aria-labelledby="fashion-heading">
+    <div class="fashion-headline-wrap reveal">
+      <div class="container">
+        <span class="section-label">Fashion</span>
+        <h2 id="fashion-heading">This Season's Designers to Watch</h2>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="fashion-scroll-track">
+
+        <!-- Designer 1 -->
+        <article class="designer-card">
+          <div class="designer-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=600&fit=crop&q=80"
+              alt="Designer Amara Cole"
+              loading="lazy"
+            />
+          </div>
+          <div class="designer-card-body">
+            <p class="designer-location">Lagos, Nigeria</p>
+            <h3>Amara Cole</h3>
+            <p class="designer-specialty">Contemporary Couture &bull; Ankara Fusion</p>
+          </div>
+        </article>
+
+        <!-- Designer 2 -->
+        <article class="designer-card">
+          <div class="designer-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=600&fit=crop&q=80"
+              alt="Designer DeShawn Price"
+              loading="lazy"
+            />
+          </div>
+          <div class="designer-card-body">
+            <p class="designer-location">Atlanta, Georgia</p>
+            <h3>DeShawn Price</h3>
+            <p class="designer-specialty">Luxury Streetwear &bull; Archival Research</p>
+          </div>
+        </article>
+
+        <!-- Designer 3 -->
+        <article class="designer-card">
+          <div class="designer-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&fit=crop&q=80"
+              alt="Designer Fatou Diallo"
+              loading="lazy"
+            />
+          </div>
+          <div class="designer-card-body">
+            <p class="designer-location">Dakar, Senegal</p>
+            <h3>Fatou Diallo</h3>
+            <p class="designer-specialty">Textiles &bull; Sustainable African Fashion</p>
+          </div>
+        </article>
+
+        <!-- Designer 4 -->
+        <article class="designer-card">
+          <div class="designer-card-img">
+            <img
+              src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=600&fit=crop&q=80"
+              alt="Designer Zuri Monroe"
+              loading="lazy"
+            />
+          </div>
+          <div class="designer-card-body">
+            <p class="designer-location">London, UK</p>
+            <h3>Zuri Monroe</h3>
+            <p class="designer-specialty">Avant-Garde &bull; Pan-African Aesthetic</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FILM SECTION
+       ============================================ -->
+  <section id="film" class="section" aria-labelledby="film-heading">
+    <div class="container">
+
+      <div class="film-header reveal">
+        <span class="section-label">Film &amp; Cinema</span>
+        <h2 id="film-heading">Now Screening</h2>
+      </div>
+
+      <div class="film-grid">
+
+        <!-- Film 1 -->
+        <article class="film-card reveal">
+          <div class="film-poster">
+            <img
+              src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?w=500&fit=crop&q=80"
+              alt="Film poster: The Seventh Sun"
+              loading="lazy"
+            />
+            <div class="film-poster-overlay"></div>
+            <span class="genre-badge">Drama</span>
+          </div>
+          <div class="film-card-body">
+            <h3>The Seventh Sun</h3>
+            <p class="film-director">Dir. Selena Okafor &bull; 2025</p>
+          </div>
+        </article>
+
+        <!-- Film 2 -->
+        <article class="film-card reveal">
+          <div class="film-poster">
+            <img
+              src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=500&fit=crop&q=80"
+              alt="Film poster: Homeward — A Journey Through Sound"
+              loading="lazy"
+            />
+            <div class="film-poster-overlay"></div>
+            <span class="genre-badge">Documentary</span>
+          </div>
+          <div class="film-card-body">
+            <h3>Homeward</h3>
+            <p class="film-director">Dir. Malik Tunde &bull; 2024</p>
+          </div>
+        </article>
+
+        <!-- Film 3 -->
+        <article class="film-card reveal">
+          <div class="film-poster">
+            <img
+              src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=500&fit=crop&q=80"
+              alt="Film poster: Kingdom of Nines"
+              loading="lazy"
+            />
+            <div class="film-poster-overlay"></div>
+            <span class="genre-badge">Sci-Fi</span>
+          </div>
+          <div class="film-card-body">
+            <h3>Kingdom of Nines</h3>
+            <p class="film-director">Dir. Jordan Achebe &bull; 2025</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SUBMIT YOUR WORK CTA
+       ============================================ -->
+  <section id="submit" aria-labelledby="submit-heading">
+    <div class="submit-left">
+
+      <h2 id="submit-heading">Your work belongs here.</h2>
+      <p>
+        121212.culture exists to amplify Black creative genius at every level —
+        emerging, established, underground, iconic. If you're creating, we want to know.
+        Submit your work and let the culture decide.
+      </p>
+
+      <form class="submit-form" id="submit-form" novalidate>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="field-name">Full Name</label>
+            <input type="text" id="field-name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-field">
+            <label for="field-email">Email Address</label>
+            <input type="email" id="field-email" name="email" placeholder="you@email.com" required />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="field-discipline">Creative Discipline</label>
+          <select id="field-discipline" name="discipline" required>
+            <option value="" disabled selected>Select your discipline</option>
+            <option value="visual-art">Visual Art</option>
+            <option value="fashion">Fashion / Apparel Design</option>
+            <option value="film">Film / Cinematography</option>
+            <option value="graphic-design">Graphic / Brand Design</option>
+            <option value="photography">Photography</option>
+            <option value="illustration">Illustration</option>
+            <option value="architecture">Architecture / Interior Design</option>
+            <option value="music-visual">Music Video / Visual Media</option>
+            <option value="other">Other Creative Medium</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="field-description">Tell Us About Your Work</label>
+          <textarea
+            id="field-description"
+            name="description"
+            rows="4"
+            placeholder="Describe your work, project, or creative vision..."
+            required
+          ></textarea>
+        </div>
+
+        <div class="form-field">
+          <label for="field-portfolio">Portfolio / Work Link</label>
+          <input
+            type="url"
+            id="field-portfolio"
+            name="portfolio"
+            placeholder="https://yourportfolio.com"
+          />
+        </div>
+
+        <button type="submit" class="form-submit-btn">Submit Your Work</button>
+      </form>
+
+      <div class="form-success" id="form-success" aria-live="polite">
+        <h3>Submission Received.</h3>
+        <p>We review every submission personally. You'll hear from us within 5–7 days. The culture sees you.</p>
+      </div>
+
+    </div>
+
+    <div class="submit-right">
+      <h3>Why Submit to 121212.culture?</h3>
+
+      <div class="reason-list">
+
+        <div class="reason-item reveal">
+          <div class="reason-number">01</div>
+          <div class="reason-content">
+            <h4>An Audience That Actually Cares</h4>
+            <p>Our readers are collectors, creatives, buyers, directors, and tastemakers. When we feature your work, the right eyes find it.</p>
+          </div>
+        </div>
+
+        <div class="reason-item reveal">
+          <div class="reason-number">02</div>
+          <div class="reason-content">
+            <h4>Editorial Treatment. Not an Algorithm.</h4>
+            <p>Every featured creator receives a full editorial spread written by our team — not a post, not a reel. A story that lasts.</p>
+          </div>
+        </div>
+
+        <div class="reason-item reveal">
+          <div class="reason-number">03</div>
+          <div class="reason-content">
+            <h4>Part of the 121212 Empire</h4>
+            <p>Getting featured on 121212.culture opens doors to every platform in the empire — business, culture, and beyond. This is just the beginning.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer role="contentinfo">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <a href="#" class="logo">
+            <span class="gold">121212</span><span class="white">.culture</span>
+          </a>
+          <p>
+            The definitive home of Black creative genius. Art. Fashion. Film. Design.
+            We don't follow the culture — we are the culture.
+          </p>
+          <span class="empire-label">Part of the 121212 Empire</span>
+        </div>
+
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <ul>
+            <li><a href="#culture-grid-section">Art</a></li>
+            <li><a href="#fashion">Fashion</a></li>
+            <li><a href="#film">Film</a></li>
+            <li><a href="#culture-grid-section">Design</a></li>
+            <li><a href="#">Photography</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Platform</h5>
+          <ul>
+            <li><a href="#spotlight">Spotlight</a></li>
+            <li><a href="#submit">Submit Work</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>121212 Empire</h5>
+          <ul>
+            <li><a href="#">121212.black</a></li>
+            <li><a href="#">121212.business</a></li>
+            <li><a href="#">121212.media</a></li>
+            <li><a href="#">121212.health</a></li>
+            <li><a href="#">121212.edu</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 121212 Empire. All rights reserved. Black excellence is non-negotiable.</p>
+        <div class="footer-empire-bar">
+          <div class="empire-dot"></div>
+          <span>121212 Empire — Culture Division</span>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
